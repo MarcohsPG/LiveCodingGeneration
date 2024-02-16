@@ -14,3 +14,15 @@ function Ej1(cadena, arreglo) {
 
 
 console.log(Ej1(cadena,arreglo));
+
+//let myArray=['insecto', 'bootcamp', 'escritorio'];
+let myArray=Ej1(cadena,arreglo);
+let lista=document.getElementById("lista");
+function arreglos(myArray){
+myArray.forEach(element => {
+lista.insertAdjacentHTML("beforeend",`
+ <li>${element}</li>
+ `)
+ });
+}
+arreglos(myArray);
